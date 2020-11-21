@@ -18,7 +18,7 @@ class App extends Component {
       } = await youtube.get("", {
         params: { q: term },
       });
-      this.setState({ videos, selectedVideo: videos[0] });
+      this.setState({ videos, selectedVideo: videos[0], error: null });
     } catch (ex) {
       this.setState({ error: "on error occured" });
     }

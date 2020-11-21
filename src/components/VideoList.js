@@ -12,7 +12,6 @@ const VideoList = ({ videos, onVideoSelect }) => {
     );
   });
 
-  console.log("Video List", videos);
   return <div className="ui relaxed divided list"> {renderList} </div>;
 };
 
